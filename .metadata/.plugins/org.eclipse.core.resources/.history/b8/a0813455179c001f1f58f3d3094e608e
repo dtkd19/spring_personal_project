@@ -1,0 +1,5 @@
+package com.sh.spring.config;
+
+public class RootConfig {
+
+}

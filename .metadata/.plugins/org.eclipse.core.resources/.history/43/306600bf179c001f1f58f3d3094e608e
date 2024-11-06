@@ -1,0 +1,16 @@
+package com.sh.spring.config;
+
+import org.mybatis.spring.annotation.MapperScan;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.Configuration;
+
+@MapperScan(basePackages = {"com.ezen.spring.dao"})
+@Configuration
+public class RootConfig {
+	
+	@Autowired
+	ApplicationContext applicationContext;
+	
+	
+}

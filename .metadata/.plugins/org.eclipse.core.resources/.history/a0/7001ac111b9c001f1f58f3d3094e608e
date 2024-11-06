@@ -1,0 +1,5 @@
+package com.sh.spring.domain;
+
+public class boardVO {
+
+}

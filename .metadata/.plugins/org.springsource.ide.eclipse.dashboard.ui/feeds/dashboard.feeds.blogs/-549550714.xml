@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Spring]]></title><description><![CDATA[Level up your Java code and explore what Spring can do for you.]]></description><link>https://spring.io</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 06 Nov 2024 00:31:51 GMT</lastBuildDate><item><title><![CDATA[This Week in Spring - November 5th, 2024]]></title><link>https://spring.io/blog/2024/11/05/this-week-in-spring-november-5th-2024</link><guid isPermaLink="true">https://spring.io/blog/2024/11/05/this-week-in-spring-november-5th-2024</guid><dc:creator><![CDATA[joshlong]]></dc:creator><pubDate>Tue, 05 Nov 2024 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;this-week-in-spring---november-5th-2024&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#this-week-in-spring---november-5th-2024&quot; aria-label=&quot;this week in spring   november 5th 2024 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;This Week in Spring - November 5th, 2024&lt;/h1&gt;
+&lt;p&gt;Hi, Spring fans! Welcome to another installment of &lt;em&gt;This Week in Spring&lt;/em&gt;! It&apos;s the 5th of November, 2024, and, um, I - an American - am desperately trying to keep calm and carry on. I did everything I can do (VOTE!), and so  it&apos;s with considerable enthusiasm that I dive into this week&apos;s (hopefully distracting) roundup!&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://x.com/david_syer/status/1849839624325157198?s=12&quot;&gt;Dr. David Syer announcing the Spring GRPC project&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;a Spring Boot and GraalVM native image application, demonstrated &lt;a href=&quot;https://x.com/alina_yurenko/status/1850945616500965809?s=12&quot;&gt;by awesome Oracle GraalVM developer advocate Alina Yurenko&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://medium.com/@AlexanderObregon/spring-boot-springbootapplication-annotation-explained-c1d619cc0367&quot;&gt;understanding the Spring Boot &lt;code&gt;@SpringBootApplication&lt;/code&gt; annotation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://naveen-metta.medium.com/understanding-the-lifecycle-of-a-bean-in-spring-boot-5d855d16dec0&quot;&gt;understanding the lifecycle of a Spring Boot application&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://joshlong.com/jl/blogPost/the-best-time-to-be-a-java-spring-developer.html&quot;&gt;there&apos;s never been a better time to be a Java and Spring developer!&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://joshlong.com/jl/blogPost/the-best-time-to-be-a-java-spring-developer.html&quot;&gt;A New Developer&apos;s Journey, in 2024&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Super cool! Java 24 is targeting a fix to allow developers &lt;a href=&quot;https://openjdk.org/jeps/491&quot;&gt;to synchronize code on virtual threads and avoid &lt;em&gt;pinning&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[This Week in Spring - October 29th, 2024 ]]></title><link>https://spring.io/blog/2024/10/29/this-week-in-spring-october-29th-2024</link><guid isPermaLink="true">https://spring.io/blog/2024/10/29/this-week-in-spring-october-29th-2024</guid><dc:creator><![CDATA[joshlong]]></dc:creator><pubDate>Tue, 29 Oct 2024 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Hi, Spring fans! How&apos;re things? It&apos;s almost Halloween! I&apos;m so excited! I&apos;m going as a  PHP program. &lt;em&gt;Boooooooo&lt;/em&gt;...t. I&apos;m writing this from the amazing Vaadin Create conference in Frankfurt, Germany, about to do my keynote for an amazing, Spring-loving audience here. So, without further ado, let&apos;s dive right into it!&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://spring.io/blog/2024/10/28/restclient-support-for-oauth2-in-spring-security-6-4&quot;&gt;&lt;code&gt;RestClient&lt;/code&gt; support for OAuth 2 in Spring Security 6.4&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://spring.io/blog/2024/10/28/spring-modulith-1-3-rc1-1-2-5-and-1-1-10-released&quot;&gt;Spring Modulith 1.3 RC1, 1.2.5, and 1.1.10 released&lt;/a&gt;. The RC has several  cool new contributions, including one from my friend and teammate Cora Iberkleid introducing an archiving event publication completionm mode; and one contribution from me, that supports externalizing events with Spring Integration &lt;code&gt;MessageChannel&lt;/code&gt;s. Nice! Get the bits now!&lt;/li&gt;
+&lt;li&gt;An awesome blog from Marcin Grzejszczak: &lt;a href=&quot;https://spring.io/blog/2024/10/28/lets-use-opentelemetry-with-spring&quot;&gt;&lt;em&gt;Let&apos;s Use OpenTelemetry with Spring&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://spring.io/blog/2024/10/26/spring-boot-3-4-0-rc1-available-now&quot;&gt;Spring Boot 3.4.0 RC1 is available now&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;in last week&apos;s &lt;em&gt;A Bootiful Podcast&lt;/em&gt;, I talked to GraalVM benevolent dictator &lt;a href=&quot;https://spring.io/blog/2024/10/24/a-bootiful-podcast-graalvm-founder-and-bdfl-thomas-wuerthinger-on-graalpy&quot;&gt;for life and founder Thomas Wuerthinger&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://spring.io/blog/2024/10/24/spring-integration-6-4-rc1-available&quot;&gt;Spring Integration 6.4 RC1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://spring.io/blog/2024/10/24/spring-boot-3-3-5-available-now&quot;&gt;Spring Boot 3.3.5 available&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://spring.io/blog/2024/10/24/spring-framework-6-2-0-rc3-available-now&quot;&gt;Spring Framework 6.2.0 RC3 available now&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://spring.io/blog/2024/10/24/spring-boot-3-2-11-available-now&quot;&gt;Spring Boot 3.2.11 available now&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://spring.io/blog/2024/10/25/spring-batch-5-2-0-rc1-is-out&quot;&gt;Spring Batch 5.2.0 RC1 is out&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://spring.io/blog/2024/10/23/spring-authorization-server-1-4-0-rc1-1-3-3-and-1-2-7-available-now&quot;&gt;Spring Authorization Server 1.4.0 RC1, 1.3.3, and 1.2.7 now available&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://spring.io/blog/2024/10/23/spring-for-graphql-1-2-9-and-1-3-3-released&quot;&gt;Spring for GraphQL 1.2.9 and 1.3.3 released&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://spring.io/blog/2024/10/22/spring-amqp-3-2-rc1-available&quot;&gt;Spring AMQP 3.2 RC1 available&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://spring.io/blog/2024/10/22/spring-for-apache-kafka-3-3-0-rc1-released&quot;&gt;Spring for Apache Kafka 3.3.0 RC1 released&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;I love this &lt;a href=&quot;https://x.com/Sharat_Chander/status/1850960248787612079?s=12&quot;&gt;incredibly comprehensive list of cool people in the Java ecoststem&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;this is an interesting Portuguese-language video on &lt;a href=&quot;https://www.youtube.com/watch?v=LPZPHnYdR2Y&quot;&gt;creating a To-Do list in Spring Boot&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Have you seen the &lt;a href=&quot;https://x.com/springtools4/status/1849778824063463666?s=12&quot;&gt;new CRON expressions support in Spring Tools 4&lt;/a&gt;?&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://x.com/christzolov/status/1849731602584105127?s=12&quot;&gt;Spring AI continues its Anthropic integration with support for the newly released Claude 3.5 Sonnet model upgrade&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://neuw.medium.com/spring-boot-aws-roles-anywhere-quick-guide-fb9e85db9c20&quot;&gt;A nice blog by Karanbir Singh on using Spring Boot  AWS Roles Anywhere&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Hey! Readers of Java Magazine (NL), check out Oracle GraalVM developer advocate Alina Yurenko&apos;s new article looking at &lt;a href=&quot;https://x.com/alina_yurenko/status/1849428784346247233?s=46&amp;#x26;t=n-UflcIbnx1lage-TBk0Cg&quot;&gt;the amazing opportunity in using Spring and GraalVM together&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Did you see the &lt;a href=&quot;https://x.com/sdeleuze/status/1849489721556418920?s=46&amp;#x26;t=n-UflcIbnx1lage-TBk0Cg&quot;&gt;latest Spring Boot 3.3.5 release has an incredible optimization for scalability in R2DBC (and, for the moment, PostgreSQL)&lt;/a&gt;?&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://x.com/maciejwalkowiak/status/1848788458350784974?s=12&quot;&gt;A recap for those who need it: Aggregate Design Rules according to Vaughn Vernon&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Spring Modulith 1.3 RC1, 1.2.5, and 1.1.10 released]]></title><link>https://spring.io/blog/2024/10/28/spring-modulith-1-3-rc1-1-2-5-and-1-1-10-released</link><guid isPermaLink="true">https://spring.io/blog/2024/10/28/spring-modulith-1-3-rc1-1-2-5-and-1-1-10-released</guid><dc:creator><![CDATA[odrotbohm]]></dc:creator><pubDate>Mon, 28 Oct 2024 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;On behalf of the community, I am delighted to announce the avability of Spring Modulith 1.3 RC1, 1.2.5, and 1.1.10. While the service releases contain a few bugfixes and the usual dependency updates, the release candidate is packed with features and improvements such as (full change log &lt;a href=&quot;https://github.com/spring-projects/spring-modulith/releases/tag/1.3.0-RC1&quot;&gt;here&lt;/a&gt;):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;An &lt;a href=&quot;https://docs.spring.io/spring-modulith/reference/1.3/events.html#publication-registry.completion&quot;&gt;archiving event publication completion mode&lt;/a&gt; (thanks to &lt;a href=&quot;https://github.com/ciberkleid&quot;&gt;Cora Iberkleid&lt;/a&gt; for the contribution).&lt;/li&gt;
+&lt;li&gt;Support for &lt;a href=&quot;https://github.com/spring-projects/spring-modulith/issues/836&quot;&gt;MariaDB&lt;/a&gt; (thanks, &lt;a href=&quot;https://github.com/Fezlight&quot;&gt;@Fezlight&lt;/a&gt;) and &lt;a href=&quot;https://github.com/spring-projects/spring-modulith/issues/866&quot;&gt;Oracle DB&lt;/a&gt; (thanks to &lt;a href=&quot;https://github.com/DSXVII&quot;&gt;@DSXVII&lt;/a&gt;) in the JDBC-based event publication registry.&lt;/li&gt;
+&lt;li&gt;Support to externalize events into a &lt;a href=&quot;https://github.com/spring-projects/spring-modulith/pull/869&quot;&gt;Spring (Integration) &lt;code&gt;MessageChannel&lt;/code&gt;&lt;/a&gt; via the new &lt;code&gt;spring-modulith-events-messaging&lt;/code&gt; artifact (thanks to &lt;a href=&quot;https://github.com/joshlong&quot;&gt;Josh Long&lt;/a&gt; for the contribution).&lt;/li&gt;
+&lt;li&gt;Event externalization now allows to &lt;a href=&quot;https://github.com/spring-projects/spring-modulith/issues/855&quot;&gt;add headers to the messages&lt;/a&gt; sent out and uses the Spring Message abstraction for broker interaction where feasible.&lt;/li&gt;
+&lt;li&gt;Support for &lt;a href=&quot;https://github.com/spring-projects/spring-modulith/issues/881&quot;&gt;SpEL expressions in &lt;code&gt;@Externalized&lt;/code&gt;&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/spring-projects/spring-modulith/issues/671&quot;&gt;Deprecate event externalization for Amazon SQS and SNS&lt;/a&gt; in favor of the implementation in Spring Cloud AWS (thanks to &lt;a href=&quot;https://github.com/mslowiak&quot;&gt;Marcin Slowiak&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;Support for &lt;a href=&quot;https://github.com/spring-projects/spring-modulith/issues/846&quot;&gt;custom application module identifiers&lt;/a&gt; via &lt;code&gt;@ApplicationModule&lt;/code&gt; / &lt;code&gt;@Module&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/spring-projects/spring-modulith/issues/862&quot;&gt;Automatic technical architecture validation for jMolecules&lt;/a&gt; (Hexagonal, Onion and Layered Architecture).&lt;/li&gt;
+&lt;li&gt;Application Module Canvases generated now &lt;a href=&quot;https://github.com/spring-projects/spring-modulith/issues/854&quot;&gt;contain Javadoc&lt;/a&gt; for listed types and event listener methods.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The release candidate is the perfect opportunity to give the new features a try or even just validate that you can safely upgrade from the 1.2 generation. We are shooting for a GA release right after Spring Boot 3.4 end of November.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[RestClient Support for OAuth2 in Spring Security 6.4]]></title><link>https://spring.io/blog/2024/10/28/restclient-support-for-oauth2-in-spring-security-6-4</link><guid isPermaLink="true">https://spring.io/blog/2024/10/28/restclient-support-for-oauth2-in-spring-security-6-4</guid><dc:creator><![CDATA[sjohnr]]></dc:creator><pubDate>Mon, 28 Oct 2024 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;In Spring Security 6.2 and 6.3, we have worked to steadily improve configuration for applications using OAuth2 Client.
+Configuration for common use cases has been simplified by allowing applications to publish beans which are automatically included in the overall OAuth2 Client configuration during application startup.
+Recent improvements include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Extension grant types can be enabled simply by publishing a bean of type &lt;code&gt;OAuth2AuthorizedClientProvider&lt;/code&gt; (or &lt;code&gt;ReactiveOAuth2AuthorizedClientProvider&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;OAuth 2.0 Access Token Requests can be extended with custom parameters simply by publishing one or more beans of type &lt;code&gt;OAuth2AccessTokenResponseClient&lt;/code&gt; (or &lt;code&gt;ReactiveOAuth2AccessTokenResponseClient&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;Spring Security automatically publishes a bean of type &lt;code&gt;OAuth2AuthorizedClientManager&lt;/code&gt; (or &lt;code&gt;ReactiveOAuth2AuthorizedClientManager&lt;/code&gt;) if one is not already published, requiring less boilerplate configuration when an application needs to obtain access tokens&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In Spring Security 6.4, this theme continues with a round of improvements focused on &lt;code&gt;RestClient&lt;/code&gt;, which is a new HTTP client introduced in Spring Framework 6.1.
+&lt;code&gt;RestClient&lt;/code&gt; provides a fluent API that is incredibly similar to that of &lt;code&gt;WebClient&lt;/code&gt; but is synchronous and does not depend on reactive libraries.
+This means that configuring an application to make protected resources requests using OAuth2 Client is much simpler and does not require any additional dependencies.
+Additionally, improvements have been made to provide consistency between servlet applications using &lt;code&gt;RestClient&lt;/code&gt; and reactive applications using &lt;code&gt;WebClient&lt;/code&gt; with the goal of aligning both stacks on a common configuration model.&lt;/p&gt;
+&lt;p&gt;Let&apos;s examine the new support for &lt;code&gt;RestClient&lt;/code&gt; and other improvements for OAuth2 Client in detail.&lt;/p&gt;
+&lt;h2 id=&quot;a-brief-introduction-to-oauth2&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#a-brief-introduction-to-oauth2&quot; aria-label=&quot;a brief introduction to oauth2 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;A brief introduction to OAuth2&lt;/h2&gt;
+&lt;p&gt;First, let&apos;s start by summarizing the relevant concepts in OAuth2 that we will be using.&lt;/p&gt;
+&lt;p&gt;In OAuth2 terms, making a &lt;em&gt;protected resources request&lt;/em&gt; means including an access token in the &lt;code&gt;Authorization&lt;/code&gt; header of an outbound request to a &lt;em&gt;resource server&lt;/em&gt;.
+The originating application is called a &lt;em&gt;client&lt;/em&gt; because it initiates these outbound requests.
+The destination application is called a &lt;em&gt;resource server&lt;/em&gt; because it provides an API to access &lt;em&gt;resources&lt;/em&gt; (e.g. data) that belong to a &lt;em&gt;resource owner&lt;/em&gt; (e.g. user) and are protected by an &lt;em&gt;authorization server&lt;/em&gt;.
+An &lt;em&gt;authorization server&lt;/em&gt; is a system responsible for creating and managing access tokens representing an &lt;em&gt;authorization grant&lt;/em&gt;, which it does in response to requests (called OAuth 2.0 Access Token requests) from a &lt;em&gt;client&lt;/em&gt; on behalf of a &lt;em&gt;resource owner&lt;/em&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;make-protected-resources-requests-with-restclient&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#make-protected-resources-requests-with-restclient&quot; aria-label=&quot;make protected resources requests with restclient permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Make protected resources requests with &lt;code&gt;RestClient&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;With that brief introduction, let&apos;s look at how we would set up an application to make protected resources requests using &lt;code&gt;RestClient&lt;/code&gt; in Spring Security 6.4.
+Head on over to &lt;a href=&quot;https://start.spring.io/#!platformVersion=3.4.0-RC1&amp;#x26;dependencies=web,oauth2-client&quot;&gt;Spring Initializr&lt;/a&gt; to create a new application.
+If you are updating an existing application with Spring Boot, you will need to add the following dependency:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-groovy&quot;&gt;implementation &apos;org.springframework.boot:spring-boot-starter-oauth2-client&apos;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The application requires at least one &lt;code&gt;ClientRegistration&lt;/code&gt; to be configured through the use of a &lt;code&gt;ClientRegistrationRepository&lt;/code&gt; bean.
+The &lt;code&gt;ClientRegistration&lt;/code&gt; class is the domain model in Spring Security that contains the data for a particular OAuth2 client.
+Each client must be pre-registered with the authorization server, and this class contains details obtained from the authorization server such as &lt;code&gt;clientId&lt;/code&gt; and &lt;code&gt;clientSecret&lt;/code&gt;.
+It also contains the &lt;code&gt;authorizationGrantType&lt;/code&gt; we would like to use, such as &lt;code&gt;authorization_code&lt;/code&gt; or &lt;code&gt;client_credentials&lt;/code&gt;, and several additional parameters which can be optionally configured as required.&lt;/p&gt;
+&lt;p&gt;The following example configures an &lt;code&gt;InMemoryClientRegistrationRepository&lt;/code&gt; bean with a single &lt;code&gt;ClientRegistration&lt;/code&gt; using Spring Boot configuration properties:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;application.yml&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-yaml&quot;&gt;spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          messaging-client:
+            provider: spring
+            client-id: client1
+            client-secret: my-secret
+            authorization-grant-type: authorization_code
+            scope: message.read,message.write
+        provider:
+          spring:
+            issuer-uri: http://localhost:9000
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The above configuration allows Spring Security to obtain access tokens via the &lt;code&gt;authorization_code&lt;/code&gt; grant using a &lt;a href=&quot;https://spring.io/projects/spring-authorization-server&quot;&gt;local authorization server&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Spring Security provides implementations of &lt;code&gt;OAuth2AuthorizedClientManager&lt;/code&gt;, which is a component that can be used to obtain access tokens (such as a JWT).
+An instance of this component is automatically published as a bean by Spring Security, meaning we simply need to inject it into our own configuration in order to set up a &lt;code&gt;RestClient&lt;/code&gt; for making protected resources requests in our application.
+The following example configures a minimal &lt;code&gt;RestClient&lt;/code&gt; and publishes it as a bean:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;@Configuration
+public class RestClientConfig {
+
+	@Bean
+	public RestClient restClient(RestClient.Builder builder, OAuth2AuthorizedClientManager authorizedClientManager) {
+		OAuth2ClientHttpRequestInterceptor requestInterceptor =
+			new OAuth2ClientHttpRequestInterceptor(authorizedClientManager);
+
+		return builder.requestInterceptor(requestInterceptor).build();
+	}
+
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;We can now make protected resources requests in our own application.
+The following example demonstrates doing this in a Spring MVC controller:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;import static org.springframework.security.oauth2.client.web.client.RequestAttributeClientRegistrationIdResolver.clientRegistrationId;
+
+@RestController
+public class MessagesController {
+
+	private final RestClient restClient;
+
+	public MessagesController(RestClient restClient) {
+		this.restClient = restClient;
+	}
+
+	@GetMapping(&quot;/messages&quot;)
+	public ResponseEntity&amp;#x3C;List&amp;#x3C;Message&gt;&gt; messages() {
+		Message[] messages = this.restClient.get()
+			.uri(&quot;http://localhost:8090/messages&quot;)
+			.attributes(clientRegistrationId(&quot;messaging-client&quot;))
+			.retrieve()
+			.body(Message[].class);
+
+		return ResponseEntity.ok(Arrays.asList(messages));
+	}
+
+	public record Message(String message) {
+	}
+
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The above example makes use of a static method to provide the &lt;code&gt;registrationId&lt;/code&gt; of &lt;code&gt;&quot;messaging-client&quot;&lt;/code&gt; to the interceptor through attributes.
+The value provided matches the value in the yaml configuration provided earlier, which is how Spring Security is able to know which client id, secret, grant type, scopes and other information to use when obtaining an access token.&lt;/p&gt;
+&lt;!--
+&gt; NOTE: Notice that all other aspects of OAuth2 for the Authorization Code grant are taken care of by Spring Security. Developers do not need to write any other code to use OAuth2.
+--&gt;
+&lt;p&gt;Of course, this is just an example and you are not restricted to simply returning the results in an endpoint.
+You can do this in any part of your application that you wish, such as an &lt;code&gt;@Service&lt;/code&gt; or &lt;code&gt;@Component&lt;/code&gt; that is responsible for making protected resources requests and returning the results to your application.&lt;/p&gt;
+&lt;h2 id=&quot;make-oauth-20-access-token-requests-with-restclient&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#make-oauth-20-access-token-requests-with-restclient&quot; aria-label=&quot;make oauth 20 access token requests with restclient permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Make OAuth 2.0 Access Token requests with &lt;code&gt;RestClient&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;Prior to Spring Security 6.4, the default HTTP client for the servlet stack was &lt;code&gt;RestTemplate&lt;/code&gt;.
+Customizing OAuth 2.0 Access Token requests for servlet applications using &lt;code&gt;RestTemplate&lt;/code&gt; is quite different from customizing reactive applications that use &lt;code&gt;WebClient&lt;/code&gt; due to differences in the API between &lt;code&gt;RestTemplate&lt;/code&gt; and &lt;code&gt;WebClient&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;With the introduction of &lt;code&gt;RestClient&lt;/code&gt; in Spring Framework 6.1, it is now possible to align both stacks with very similar configuration models by utilizing &lt;code&gt;RestClient&lt;/code&gt; and &lt;code&gt;WebClient&lt;/code&gt; as the underlying HTTP clients for each stack, respectively.
+If needed, a &lt;code&gt;RestClient&lt;/code&gt; can be created from &lt;code&gt;RestTemplate&lt;/code&gt; using &lt;code&gt;RestClient.create(RestTemplate)&lt;/code&gt;, providing a clear migration path for aligning the servlet and reactive stacks on a common configuration model, which is a goal for Spring Security 7.&lt;/p&gt;
+&lt;p&gt;Spring Security 6.4 introduces new implementations of &lt;code&gt;OAuth2AccessTokenResponseClient&lt;/code&gt; for this purpose.
+If desired, you can opt-in to using &lt;code&gt;RestClient&lt;/code&gt; as the HTTP client for all OAuth2 Client features in a servlet application.
+The following example demonstrates a minimal configuration for opting into the new support with a customized instance of &lt;code&gt;RestClient&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;@Configuration
+@EnableWebSecurity
+public class SecurityConfig {
+
+	private final RestClient restClient;
+
+	@PostConstruct
+	void initialize() {
+		this.restClient = RestClient.builder()
+			.messageConverters((messageConverters) -&gt; {
+				messageConverters.clear();
+				messageConverters.add(new FormHttpMessageConverter());
+				messageConverters.add(new OAuth2AccessTokenResponseHttpMessageConverter());
+			})
+			.defaultStatusHandler(new OAuth2ErrorResponseErrorHandler())
+			// TODO: Customize the instance of RestClient as needed...
+			.build();
+	}
+
+	@Bean
+	public OAuth2AccessTokenResponseClient&amp;#x3C;OAuth2AuthorizationCodeGrantRequest&gt; authorizationCodeAccessTokenResponseClient() {
+		RestClientAuthorizationCodeTokenResponseClient accessTokenResponseClient =
+			new RestClientAuthorizationCodeTokenResponseClient();
+		accessTokenResponseClient.setRestClient(this.restClient);
+
+		return accessTokenResponseClient;
+	}
+
+	@Bean
+	public OAuth2AccessTokenResponseClient&amp;#x3C;OAuth2RefreshTokenGrantRequest&gt; refreshTokenAccessTokenResponseClient() {
+		RestClientRefreshTokenTokenResponseClient accessTokenResponseClient =
+			new RestClientRefreshTokenTokenResponseClient();
+		accessTokenResponseClient.setRestClient(this.restClient);
+
+		return accessTokenResponseClient;
+	}
+
+	@Bean
+	public OAuth2AccessTokenResponseClient&amp;#x3C;OAuth2ClientCredentialsGrantRequest&gt; clientCredentialsAccessTokenResponseClient() {
+		RestClientClientCredentialsTokenResponseClient accessTokenResponseClient =
+			new RestClientClientCredentialsTokenResponseClient();
+		accessTokenResponseClient.setRestClient(this.restClient);
+
+		return accessTokenResponseClient;
+	}
+
+	@Bean
+	public OAuth2AccessTokenResponseClient&amp;#x3C;OAuth2PasswordGrantRequest&gt; passwordAccessTokenResponseClient() {
+		return (grantRequest) -&gt; {
+			throw new UnsupportedOperationException(&quot;The `password` grant type is not supported.&quot;);
+		};
+	}
+
+	@Bean
+	public OAuth2AccessTokenResponseClient&amp;#x3C;JwtBearerGrantRequest&gt; jwtBearerAccessTokenResponseClient() {
+		RestClientJwtBearerTokenResponseClient accessTokenResponseClient =
+			new RestClientJwtBearerTokenResponseClient();
+		accessTokenResponseClient.setRestClient(this.restClient);
+
+		return accessTokenResponseClient;
+	}
+
+	@Bean
+	public OAuth2AccessTokenResponseClient&amp;#x3C;TokenExchangeGrantRequest&gt; tokenExchangeAccessTokenResponseClient() {
+		RestClientTokenExchangeTokenResponseClient accessTokenResponseClient =
+			new RestClientTokenExchangeTokenResponseClient();
+		accessTokenResponseClient.setRestClient(this.restClient);
+
+		return accessTokenResponseClient;
+	}
+
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;blockquote&gt;
+&lt;p&gt;NOTE: There is no implementation for the &lt;code&gt;password&lt;/code&gt; grant type with the new support, since existing support for this grant type is deprecated and scheduled to be removed in Spring Security 7.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;override-or-omit-default-parameters&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#override-or-omit-default-parameters&quot; aria-label=&quot;override or omit default parameters permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Override or omit default parameters&lt;/h2&gt;
+&lt;p&gt;Spring Security provides support for several grant types through implementations of the &lt;code&gt;OAuth2AccessTokenResponseClient&lt;/code&gt; (or &lt;code&gt;ReactiveOAuth2AccessTokenResponseClient&lt;/code&gt;) interface.
+A common requirement is being able to customize the parameters of an OAuth 2.0 Access Token request, which is typical when the authorization server has specific requirements or provides features not covered in a supported specification.&lt;/p&gt;
+&lt;p&gt;In Spring Security 6.3 and earlier, it was not possible for reactive applications to override or omit parameter values set by Spring Security, requiring workarounds to customize the application for such use cases.
+Overriding parameters is now possible for both reactive applications (using &lt;code&gt;WebClient&lt;/code&gt;) and servlet applications (using &lt;code&gt;RestClient&lt;/code&gt;) via the &lt;code&gt;setParametersConverter()&lt;/code&gt; customization hook.
+In this case, it&apos;s important to note that all grant-type specific and default parameters will be set first.
+Any parameters provided by your custom &lt;code&gt;parametersConverter&lt;/code&gt; will override existing parameters.&lt;/p&gt;
+&lt;p&gt;In addition to overriding parameters, it is now possible to omit parameters that may be rejected by the authorization server.
+For example, when the &lt;code&gt;ClientRegistration#clientAuthenticationMethod&lt;/code&gt; is set to &lt;code&gt;private_key_jwt&lt;/code&gt;, we can provide client authentication using a client assertion containing a generated JWT.
+Some authorization servers may choose to reject requests that contain both the &lt;code&gt;client_id&lt;/code&gt; &lt;em&gt;and&lt;/em&gt; &lt;code&gt;client_assertion&lt;/code&gt; parameters.
+In this case, because &lt;code&gt;client_id&lt;/code&gt; is a default parameter provided by Spring Security, we need a way to omit this parameter based on the knowledge that we will be providing client authentication using a client assertion.&lt;/p&gt;
+&lt;p&gt;Spring Security 6.4 provides the ability to omit parameters of the OAuth 2.0 Access Token request using the &lt;code&gt;setParametersCustomizer()&lt;/code&gt; customization hook.
+The following example shows how to omit the &lt;code&gt;client_id&lt;/code&gt; parameter when using a client assertion for client authentication with the &lt;code&gt;client_credentials&lt;/code&gt; grant:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;@Configuration
+@EnableWebFluxSecurity
+public class SecurityConfig {
+
+	@Bean
+	public ReactiveOAuth2AccessTokenResponseClient&amp;#x3C;OAuth2ClientCredentialsGrantRequest&gt; clientCredentialsAccessTokenResponseClient() {
+		WebClientReactiveClientCredentialsTokenResponseClient accessTokenResponseClient =
+			new WebClientReactiveClientCredentialsTokenResponseClient();
+		accessTokenResponseClient.addParametersConverter(
+			new NimbusJwtClientAuthenticationParametersConverter&amp;#x3C;&gt;(jwkResolver()));
+		accessTokenResponseClient.setParametersCustomizer((parameters) -&gt; {
+			if (parameters.containsKey(OAuth2ParameterNames.CLIENT_ASSERTION)) {
+				parameters.remove(OAuth2ParameterNames.CLIENT_ID);
+			}
+		});
+
+		return accessTokenResponseClient;
+	}
+
+	private Function&amp;#x3C;ClientRegistration, JWK&gt; jwkResolver() {
+		// ...
+	}
+
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;blockquote&gt;
+&lt;p&gt;TIP: You can provide equivalent configuration for servlet applications when using the &lt;code&gt;RestClientClientCredentialsTokenResponseClient&lt;/code&gt; (or alternate implementations for other grant types) as well.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;conclusion&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#conclusion&quot; aria-label=&quot;conclusion permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;Spring Security 6.4 is an exciting release full of improvements for applications secured with OAuth2, and contains many other exciting features as well.
+In this post, we examined three new features from the upcoming release.
+First, we discussed making protected resources requests with &lt;code&gt;RestClient&lt;/code&gt; in non-reactive applications without requiring additional dependencies.
+Next, we looked at opting into using &lt;code&gt;RestClient&lt;/code&gt; everywhere and enjoying streamlined and more consistent configuration that is aligned with the reactive stack.
+Finally, we learned how to override or omit default parameters in OAuth 2.0 Access Token requests, which unlocks advanced scenarios that were previously difficult to account for.&lt;/p&gt;
+&lt;p&gt;I hope you are as excited as I am about this new round of improvements and all the other features available with Spring Security 6.4.
+These features and more are available for pre-release in Spring Security &lt;code&gt;6.4.0-RC1&lt;/code&gt;, so please try them out.
+We&apos;d love to hear your feedback!&lt;/p&gt;</content:encoded></item></channel></rss>
