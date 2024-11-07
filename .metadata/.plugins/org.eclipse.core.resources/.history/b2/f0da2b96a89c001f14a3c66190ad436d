@@ -1,0 +1,37 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+
+<jsp:include page="../layout/header.jsp" />
+
+<div class="container-md">
+	<h1>글쓰기</h1>
+	<form action="/board/register" method="post">
+		<div class="mb-3">
+			<label for="t" class="form-label">제목</label> <input type="text"
+				class="form-control" id="t" name="title" placeholder="제목을 입력해주세요...">
+		</div>
+		<div class="mb-3">
+			<label for="w" class="form-label">작성자</label> <input type="text"
+				class="form-control" id="w" name="writer" placeholder="writer"
+				>
+		</div>
+		<div class="mb-3">
+			<label for="c" class="form-label">내용</label>
+			<textarea class="form-control" id="c" rows="3" name="content" placeholder="내용을 입력해주세요..."></textarea>
+		</div>
+		<button type="submit" class="btn btn-primary" id="regBtn">등록</button>
+	</form>
+	
+<div class="row g-2">
+  <div class="col-sm-7">
+    <input type="text" class="form-control" placeholder="제목을 입력해주세요..." aria-label="title">
+  </div>
+  <div class="col-sm">
+    <input type="text" class="form-control" placeholder="Zip" aria-label="Zip">
+  </div>
+</div>
+
+</div>
+
+<jsp:include page="../layout/footer.jsp" />

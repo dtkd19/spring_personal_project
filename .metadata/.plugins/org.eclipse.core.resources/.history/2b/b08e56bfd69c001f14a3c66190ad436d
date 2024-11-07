@@ -1,0 +1,101 @@
+package com.sh.spring.controller;
+
+import java.util.List;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.multipart.MultipartFile;
+
+import com.sh.spring.domain.BoardDTO;
+import com.sh.spring.domain.BoardVO;
+import com.sh.spring.domain.FileVO;
+import com.sh.spring.domain.PagingVO;
+import com.sh.spring.handler.FileHandler;
+import com.sh.spring.handler.PagingHandler;
+import com.sh.spring.service.BoardService;
+
+import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
+
+
+@RequestMapping("/board/*")
+@RequiredArgsConstructor
+@Slf4j
+@Controller
+public class BoardController {
+	
+	private final BoardService bsv;
+	private final FileHandler fh;
+	
+	@GetMapping("/register")
+	public void register() {}
+	
+
+	@PostMapping("/register")
+	public String register(BoardVO bvo, MultipartFile[] files) {
+		
+		log.info(" board register bvo > {} " , bvo);
+		
+		List<FileVO> flist = null;
+		
+		if(files[0].getSize() > 0) {
+			// 파일의 내용이 있다면
+			flist = fh.uploadFiles(files);
+			log.info(">>> flist > {}", flist);
+//			int isOk = bsv.hasFile(bvo.getBno());
+		}		
+		// files 정보를 이용하여 => List<FileVO> 변환을 하는 핸들러
+		// FileHandler => return List<FileVO> + 파일 저장 
+			
+		BoardDTO bdto = new BoardDTO(bvo, flist); // bvo, flist
+				
+		int isOk = bsv.register(bdto);
+		
+		return "redirect:/board/list";			
+	}
+	
+	@GetMapping("/list")
+	public void list(Model m, PagingVO pgvo, BoardVO bvo) {
+		
+		List<BoardVO> list = bsv.getList(pgvo);
+		
+		int totalCount = bsv.getTotal(pgvo);
+		
+		PagingHandler ph = new PagingHandler(totalCount, pgvo);
+				
+		m.addAttribute("list",list);
+		m.addAttribute("ph", ph);
+		
+	}
+	
+	@GetMapping({"/detail","/modify"})
+	public void detail(Model m, int bno) {
+		
+		BoardVO bvo = bsv.getDetail(bno);
+		
+		BoardDTO bdto = bsv.getDetail(bvo);
+		
+		m.addAttribute("bvo",bvo);
+	}
+	
+	@PostMapping("/modify")
+	public String modify(BoardVO bvo) {
+		
+		int isOk = bsv.modify(bvo);
+					
+		return "redirect:/board/detail?bno=" +bvo.getBno();
+	}
+	
+	@GetMapping("/delete")
+	public String delete(int bno) {
+		int isOk = bsv.delete(bno);
+		
+		return "redirect:/board/list";
+	}
+	
+	
+	
+}

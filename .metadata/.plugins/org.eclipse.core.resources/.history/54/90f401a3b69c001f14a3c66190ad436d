@@ -1,0 +1,19 @@
+package com.sh.spring.service;
+
+import java.util.List;
+
+import com.sh.spring.domain.BoardVO;
+
+public interface BoardService {
+
+	int register(BoardVO bvo);
+
+	List<BoardVO> getList();
+
+	BoardVO getDetail(int bno);
+
+	int modify(BoardVO bvo);
+
+	int delete(int bno);
+
+}

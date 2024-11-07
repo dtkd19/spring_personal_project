@@ -1,0 +1,14 @@
+package com.sh.spring.dao;
+
+import java.util.List;
+
+import com.sh.spring.domain.CommentVO;
+import com.sh.spring.domain.PagingVO;
+
+public interface CommentDAO {
+
+	int post(CommentVO cvo);
+
+	List<CommentVO> getList(long bno, PagingVO pgvo);
+
+}

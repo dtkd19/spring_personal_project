@@ -1,0 +1,62 @@
+package com.sh.spring.service;
+
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import com.sh.spring.dao.BoardDAO;
+import com.sh.spring.domain.BoardDTO;
+import com.sh.spring.domain.BoardVO;
+import com.sh.spring.domain.PagingVO;
+
+import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
+
+
+@RequiredArgsConstructor
+@Slf4j
+@Service
+public class BoardServiceImpl implements BoardService {
+	
+	private final BoardDAO bdao;
+
+	@Override
+	public int register(BoardDTO bdto) {
+		// TODO Auto-generated method stub
+		return bdao.register(bdto);
+	}
+	@Override
+	public List<BoardVO> getList(PagingVO pgvo) {
+		// TODO Auto-generated method stub
+		return bdao.getList(pgvo);
+	}
+
+	@Override
+	public BoardDTO getDetail(int bno) {
+		// TODO Auto-generated method stub
+		return bdao.getDetail(bno);
+	}
+
+	@Override
+	public int modify(BoardDTO boardDTO) {
+		// TODO Auto-generated method stub
+		return bdao.modify(boardDTO);
+	}
+
+	@Override
+	public int delete(int bno) {
+		// TODO Auto-generated method stub
+		return bdao.delete(bno);
+	}
+	@Override
+	public int getTotal(PagingVO pgvo) {
+		// TODO Auto-generated method stub
+		return bdao.getTotal(pgvo);
+	}
+//	@Override
+//	public int hasFile(long bno) {
+//		// TODO Auto-generated method stub
+//		return bdao.hasFile(bno);
+//	}
+
+}

@@ -1,0 +1,20 @@
+package com.sh.spring.dao;
+
+import java.util.List;
+
+import com.sh.spring.domain.BoardVO;
+import com.sh.spring.domain.PagingVO;
+
+public interface BoardDAO {
+
+	int register(BoardVO bvo);
+
+	List<BoardVO> getList(PagingVO pgvo);
+
+	BoardVO getDetail(int bno);
+
+	int modify(BoardVO bvo);
+
+	int delete(int bno);
+
+}

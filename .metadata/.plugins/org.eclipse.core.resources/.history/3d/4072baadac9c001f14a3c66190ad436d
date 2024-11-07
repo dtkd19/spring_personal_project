@@ -1,0 +1,9 @@
+package com.sh.spring.dao;
+
+import com.sh.spring.domain.BoardVO;
+
+public interface BoardDAO {
+
+	int register(BoardVO bvo);
+
+}

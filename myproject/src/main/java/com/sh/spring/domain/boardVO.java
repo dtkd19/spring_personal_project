@@ -11,7 +11,7 @@ import lombok.ToString;
 @ToString
 @Setter
 @Getter
-public class boardVO {
+public class BoardVO {
 	private long bno;
 	private String title;
 	private String writer;
@@ -19,4 +19,6 @@ public class boardVO {
 	private String isDel;
 	private String regDate;
 	private int readCount;
+	private int cmtQty;
+	private int hasFile;
 }

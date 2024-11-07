@@ -1,0 +1,14 @@
+package com.sh.spring.dao;
+
+
+import com.sh.spring.domain.CommentVO;
+import com.sh.spring.domain.PagingVO;
+import com.sh.spring.handler.PagingHandler;
+
+public interface CommentDAO {
+
+	int post(CommentVO cvo);
+
+	PagingHandler getList(long bno, PagingVO pgvo);
+
+}
