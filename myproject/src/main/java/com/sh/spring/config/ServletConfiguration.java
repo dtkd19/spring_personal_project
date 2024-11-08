@@ -2,6 +2,7 @@ package com.sh.spring.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
+import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.web.multipart.MultipartResolver;
 import org.springframework.web.multipart.support.StandardServletMultipartResolver;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
@@ -12,8 +13,9 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 import org.springframework.web.servlet.view.JstlView;
 
 
+@EnableScheduling
 @EnableWebMvc
-@ComponentScan(basePackages = {"com.sh.spring.controller","com.sh.spring.service","com.sh.spring.handler"})
+@ComponentScan(basePackages = {"com.sh.spring.controller","com.sh.spring.service","com.sh.spring.handler","com.sh.spring.security"})
 public class ServletConfiguration implements WebMvcConfigurer {
 
 	@Override

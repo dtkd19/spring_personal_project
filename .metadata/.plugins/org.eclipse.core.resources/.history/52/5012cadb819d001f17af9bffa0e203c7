@@ -1,0 +1,37 @@
+package com.sh.spring.service;
+
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import com.sh.spring.dao.UserDAO;
+import com.sh.spring.domain.UserVO;
+
+import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
+
+
+@Slf4j
+@RequiredArgsConstructor
+@Service
+public class UserServiceImpl implements UserService {
+	
+	private final UserDAO udao;
+	
+	@Transactional
+	@Override
+	public int register(UserVO uvo) {
+			
+		int isOk = udao.register(uvo);
+		return udao.registerAuthInit(uvo.getEmail()); 
+	}
+
+	@Override
+	public List<UserVO> getList() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	
+}

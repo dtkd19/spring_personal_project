@@ -15,7 +15,12 @@
  	
  	 <delete id="fileDelete">
  		delete from file where uuid = #{uuid}
- 	</delete>
- 
+ 	</delete>	
+ 	<select id="getFvo" resultType="com.sh.spring.domain.FileVO">
+		select * from file where uuid = #{uuid}
+	</select>
+	 <select id="selectListAllFile" resultType="com.sh.spring.domain.FileVO">
+ 		select * from file
+ 	</select>
  
  </mapper>

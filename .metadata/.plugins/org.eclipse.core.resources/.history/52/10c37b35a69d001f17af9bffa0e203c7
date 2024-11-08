@@ -1,0 +1,5 @@
+@charset "UTF-8";
+
+.sortBtn {
+	margin-top: 50px;
+}

@@ -1,0 +1,35 @@
+package com.sh.spring.config;
+
+import org.springframework.context.annotation.Configuration;
+import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
+
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
+@EnableWebSecurity
+@Configuration
+public class SecurityConfig {
+	// 비밀번호 암호화 객체 PasswordEncoder 빈 생성
+	@Bean
+	public PasswordEncoder bcPassWordEncoder() {
+		return new BCryptPasswordEncoder();
+	}
+	
+	@Bean
+	// SuccessHandler 객체 빈 생성 => 사용자 커스텀 객체
+	public AuthenticationSuccessHandler authSuccessHnadler() {
+		return new LoginSuccessHandler();
+	}
+	
+	// FailureHandler 객체 빈 생성 => 사용자 커스텀 객체 
+	@Bean
+	public AuthenticationFailureHandler authFailureHandler() {
+		return new LoginFailureHandler();
+	}
+	
+	// UserDetail 객체 빈 생성 => 사용자 커스텀 객체
+	@Bean
+	public UserDetailsService customDetailsService() {
+		return new CustomAuthUserService();
+	}
+}

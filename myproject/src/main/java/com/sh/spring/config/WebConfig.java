@@ -12,7 +12,7 @@ public class WebConfig extends AbstractAnnotationConfigDispatcherServletInitiali
 	@Override
 	protected Class<?>[] getRootConfigClasses() {
 		// TODO Auto-generated method stub
-		return new Class[] {RootConfig.class};
+		return new Class[] {RootConfig.class, SecurityConfig.class};
 	}
 
 	@Override
@@ -29,8 +29,6 @@ public class WebConfig extends AbstractAnnotationConfigDispatcherServletInitiali
 
 	@Override
 	protected Filter[] getServletFilters() {
-		// TODO Auto-generated method stub
-//		CharacterEncodingFilter encoding = new CharacterEncodingFilter("UTF-8", true);
 		CharacterEncodingFilter encoding = new CharacterEncodingFilter();
 		encoding.setEncoding("UTF-8");
 		encoding.setForceEncoding(true); // 외부로 나가는 데이터 인코딩 여부

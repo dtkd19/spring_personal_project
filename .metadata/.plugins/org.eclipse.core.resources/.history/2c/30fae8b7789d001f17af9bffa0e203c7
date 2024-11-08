@@ -1,0 +1,9 @@
+package com.sh.spring.security;
+
+import org.springframework.security.core.userdetails.User;
+
+
+
+public class AuthUser extends User {
+
+}

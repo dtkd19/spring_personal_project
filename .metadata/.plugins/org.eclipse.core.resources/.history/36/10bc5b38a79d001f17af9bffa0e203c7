@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+.sortBtn {
+	margin-top: 50px;
+	margin-bottom: 10px;
+}
+
+.table th{
+	padding-left: 10px;
+	
+}
+.table td{
+	padding-left: 10px;
+}
+
+.tableBox{
+	background-color: #1A2226;
+	padding: 20px;
+}

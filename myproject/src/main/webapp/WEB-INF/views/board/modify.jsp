@@ -29,9 +29,7 @@
 			<br> <label for="c" class="form-label">내용</label>
 			<textarea class="form-control" id="c" rows="20" cols="5"
 				name="content" >${bvo.content }</textarea>
-		</div>
-		<button type="submit" class="btn btn-primary" id="regBtn">수정</button>
-		
+		</div>	
 		<c:set value="${bdto.flist }" var="flist"></c:set>
 		<div class="mb-3">
 			<ul class="list-group list-group-flush">
@@ -62,8 +60,8 @@
 			</ul>
 		</div>
 		
-		<button type="submit" id="regBtn" class="btn btn-success">update</button>
-		<a href="/board/list"><button type="button" class="btn btn-info">list</button></a>		
+		<button type="submit" id="regBtn" class="btn btn-success">수정</button>
+		<a href="/board/list"><button type="button" class="btn btn-info">목록</button></a>		
 	</form>
 </div>
 

@@ -1,0 +1,20 @@
+@charset "UTF-8";
+.nbar{
+	width : 100%;
+	padding: 15px 30px;
+	background-color: #1A2226;
+	color: #ECF0F5;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nbar a{
+	  color: #0DB8DE;
+	  text-decoration: none;
+	  font-weight: bold;
+	  letter-spacing: 1px;
+	  transition: color 0.3s ease;
+	  text-align: center;
+}
+.nbar a:hover {
+    color: #0098C; 
+}

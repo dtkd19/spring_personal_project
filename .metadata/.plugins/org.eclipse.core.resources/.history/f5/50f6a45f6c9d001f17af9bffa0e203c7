@@ -1,0 +1,31 @@
+package com.sh.spring.handler;
+
+import java.time.LocalDateTime;
+import java.util.List;
+
+import org.springframework.scheduling.annotation.EnableScheduling;
+import org.springframework.scheduling.annotation.Scheduled;
+import org.springframework.stereotype.Component;
+
+import com.sh.spring.dao.FileDAO;
+import com.sh.spring.domain.FileVO;
+
+import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
+@RequiredArgsConstructor
+@Component
+@EnableScheduling
+public class FileSweeper {
+	private final FileDAO fdao;
+	private final String BASE_PATH = "D:\\_myProject\\_java\\_imageBox\\";
+	
+	@Scheduled(cron = "0 10 10 * * *")
+	public void fileSweeper() {
+		log.info(">>> fileSweeper Running Start~!! : {} ", LocalDateTime.now());
+		
+		List<FileVO> dbList = fdao.selectListAllFile();
+	}
+
+}

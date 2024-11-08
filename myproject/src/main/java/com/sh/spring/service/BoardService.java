@@ -28,8 +28,11 @@ public interface BoardService {
 
 	int cmtQtyDelete(long cno);
 
-	int hasFileUpdate(String uuid);
+	int hasFileDelete(String uuid);
 
-//	int hasFile(long bno);
+	List<BoardVO> sortCmt(PagingVO pgvo);
+
+	List<BoardVO> sortRead(PagingVO pgvo);
+
 
 }

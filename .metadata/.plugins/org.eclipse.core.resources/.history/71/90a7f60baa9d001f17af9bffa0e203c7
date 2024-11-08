@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+.mainC{
+	height: 700px;
+}
+
+.mainMsg{
+	margin-top: 30px;
+}
+
+.mainMsg p{
+	margin-top: 20px;
+}

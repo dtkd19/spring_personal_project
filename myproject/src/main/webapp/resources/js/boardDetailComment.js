@@ -44,10 +44,13 @@ function spreadCommentList(bno, page = 1){
                 li += `${cvo.content}`;
                 li += `</div>`;
                 li += `<span class="badge text-bg-primary rounded-pill">${cvo.regDate}</span>`;
-                li += `<div class="d-grid gap-2 d-md-flex justify-content-md-end">`;
-                li += `<button type="button" data-cno=${cvo.cno} class="btn btn-outline-warning btn-sm mod" data-bs-toggle="modal" data-bs-target="#myModal">%</button>`;
-                li += `<button type="button" data-cno=${cvo.cno} class="btn btn-outline-danger btn-sm del">X</button>`;
-                li += `</div>`;
+                // 버튼 
+                if(authNick == cvo.writer || admin == `true`){
+                    li += `<div class="d-grid gap-2 d-md-flex justify-content-md-end">`;
+                    li += `<button type="button" data-cno=${cvo.cno} class="btn btn-outline-warning btn-sm mod" data-bs-toggle="modal" data-bs-target="#myModal">%</button>`;
+                    li += `<button type="button" data-cno=${cvo.cno} class="btn btn-outline-danger btn-sm del">X</button>`;
+                    li += `</div>`;
+                }
                 li += `</li>`;
                 ul.innerHTML += li;           
             } 

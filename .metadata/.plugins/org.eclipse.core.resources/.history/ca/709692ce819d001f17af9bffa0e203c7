@@ -1,0 +1,9 @@
+package com.sh.spring.service;
+
+import com.sh.spring.domain.UserVO;
+
+public interface UserService {
+
+	int register(UserVO uvo);
+
+}

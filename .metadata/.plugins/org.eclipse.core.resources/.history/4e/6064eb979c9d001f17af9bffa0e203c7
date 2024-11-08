@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+    
+ <mapper namespace="com.sh.spring.dao.likeDAO">
+ 
+ 
+ 
+ <select id="getLike">
+ 	select * from likes where like_bno = #{bno}, like_email = #{email}
+ </select>
+ 
+ 
+ </mapper>

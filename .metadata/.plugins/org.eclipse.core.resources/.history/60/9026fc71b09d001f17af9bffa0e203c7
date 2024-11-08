@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+.sortBtn {
+	margin-top: 30px;
+	margin-bottom: 10px;
+}
+
+.table th{
+	padding-left: 10px;
+	
+}
+.table td{
+	padding-left: 10px;
+}
+
+.table a{
+	text-decoration: none;
+}
+ .button-container {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        margin-top: auto;  /* flex 컨테이너 안에서 버튼을 하단에 위치시킴 */
+        padding: 10px;
+    }
+

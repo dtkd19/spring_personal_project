@@ -63,19 +63,33 @@ public class BoardController {
 		return "redirect:/board/list";			
 	}
 	
-	@GetMapping("/list")
-	public void list(Model m, PagingVO pgvo, BoardVO bvo) {
+	@GetMapping({"/list","/sortCmt","/sortRead"})
+	public String list(Model m, PagingVO pgvo, BoardVO bvo, HttpServletRequest request) {
 		
-		List<BoardVO> list = bsv.getList(pgvo);
+		String path = request.getServletPath();
+		
+		List<BoardVO> list = null;
+		
+		if(path.equals("/board/list")) {
+			 list = bsv.getList(pgvo);
+		}
+		if(path.equals("/board/sortCmt")) {
+			 list = bsv.sortCmt(pgvo);
+		}
+		if(path.equals("/board/sortRead")) {
+			 list = bsv.sortRead(pgvo);
+		}
 		
 		int totalCount = bsv.getTotal(pgvo);
-		
+
 		PagingHandler ph = new PagingHandler(totalCount, pgvo);
 				
 		m.addAttribute("list",list);
 		m.addAttribute("ph", ph);
 		
+		return "/board/list";
 	}
+	
 	
 	@GetMapping({"/detail","/modify"})
 	public void detail(Model m, int bno, HttpServletRequest request) {
@@ -121,7 +135,7 @@ public class BoardController {
 		
 		log.info(">>> modfiy uuid > {} ", uuid);
 		
-		int isOk2 = bsv.hasFileUpdate(uuid);
+		int isOk2 = bsv.hasFileDelete(uuid);
 
 		int isOk= bsv.fileDelete(uuid);
 		

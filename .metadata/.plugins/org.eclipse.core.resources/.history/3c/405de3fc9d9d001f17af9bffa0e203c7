@@ -1,0 +1,15 @@
+@charset "UTF-8";
+.nbar{
+	padding: 15px 30px;
+	background-color: #1A2226;
+	color: #ECF0F5;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nbar a{
+	  color: #ECF0F5;
+	  text-decoration: none;
+	  font-weight: bold;
+	  letter-spacing: 1px;
+	  transition: color 0.3s ease;
+}

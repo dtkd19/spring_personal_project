@@ -44,7 +44,7 @@ public class BoardServiceImpl implements BoardService {
 				isOk *= fdao.insertFile(fvo);				
 			}			
 		int size = bdto.getFlist().size();
-		isOk = bdao.hasFileUpdate(bdto.getBvo().getBno(), size);	
+		isOk = bdao.hasFileUpdate(bno, size);		
 		}		
 		return isOk;
 	}
@@ -78,6 +78,8 @@ public class BoardServiceImpl implements BoardService {
 				fvo.setBno(boardDTO.getBvo().getBno());
 				isOk *= fdao.insertFile(fvo);
 			}
+		int size = boardDTO.getFlist().size();
+		isOk = bdao.hasFileUpdate(boardDTO.getBvo().getBno(), size);
 		}
 		return isOk;
 	}
@@ -116,20 +118,23 @@ public class BoardServiceImpl implements BoardService {
 		return isOk;
 	}
 	@Override
-	public int hasFileUpdate(String uuid) {
+	public int hasFileDelete(String uuid) {	
 		
-//		FileVO fvo = fdao.getFvo(uuid);		
-		
-//		int isOk = bdao.hasFileUpdate(fvo.getBno());
+		FileVO fvo = fdao.getFvo(uuid);		
+		int isOk = bdao.hasFileDelete(fvo.getBno());
 		
 		return isOk;
 	}
-	
-	
-//	@Override
-//	public int hasFile(long bno) {
-//		// TODO Auto-generated method stub
-//		return bdao.hasFile(bno);
-//	}
+	@Override
+	public List<BoardVO> sortCmt(PagingVO pgvo) {
+		// TODO Auto-generated method stub
+		return bdao.sortCmt(pgvo);
+	}
+	@Override
+	public List<BoardVO> sortRead(PagingVO pgvo) {
+		// TODO Auto-generated method stub
+		return bdao.sortRead(pgvo);
+	}
+
 
 }

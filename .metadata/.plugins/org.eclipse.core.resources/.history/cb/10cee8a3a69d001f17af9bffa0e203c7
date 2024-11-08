@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+.sortBtn {
+	margin-top: 50px;
+	margin-bottom: 5px;
+}
+
+.table{
+	
+	
+}

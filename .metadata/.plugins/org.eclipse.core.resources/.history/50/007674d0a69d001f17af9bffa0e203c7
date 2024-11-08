@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+.sortBtn {
+	margin-top: 50px;
+	margin-bottom: 5px;
+}
+
+.table th{
+	padding: 30px;
+	
+}
+.table td{
+	padding: 30px;
+}

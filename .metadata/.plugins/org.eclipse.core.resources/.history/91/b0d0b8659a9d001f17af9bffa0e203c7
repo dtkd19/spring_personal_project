@@ -1,0 +1,22 @@
+package com.sh.spring.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.sh.spring.service.likeService;
+
+import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
+
+@RequestMapping("/like/*")
+@RequiredArgsConstructor
+@Slf4j
+@Controller
+public class likeController {
+	
+	private final likeService lsv;
+	
+	
+	
+	
+}

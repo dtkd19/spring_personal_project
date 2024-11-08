@@ -58,6 +58,26 @@
 	where bno = #{bno}
 </update>
 
+ <update id="hasFileDelete">
+ 	update board set has_file = has_file - 1 where bno = #{bno}
+ </update>
+
+ <select id="sortCmt" resultType="com.sh.spring.domain.BoardVO">
+ 	select * from board
+ 	where is_del = 'N'
+ 	<include refid="search"></include>
+ 	order by cmt_qty desc
+ 	limit #{pageStart},#{qty}
+ </select>
+ <select id="sortRead" resultType="com.sh.spring.domain.BoardVO">
+ 	select * from board
+ 	where is_del = 'N'
+ 	<include refid="search"></include>
+ 	order by read_count desc
+ 	limit #{pageStart},#{qty}
+ </select>
+
+
 
 <!--  <update id="hasFile">
  	update board b set has_file = (select Count(*) from file f where f.bno = b.bno);

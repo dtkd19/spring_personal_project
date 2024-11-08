@@ -31,6 +31,11 @@ public interface BoardDAO {
 
 	int hasFileUpdate(@Param("bno") long bno,@Param("cnt") int size);
 
-//	int hasFile(long bno);
+	int hasFileDelete(long bno);
+
+	List<BoardVO> sortCmt(PagingVO pgvo);
+
+	List<BoardVO> sortRead(PagingVO pgvo);
+
 
 }

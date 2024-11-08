@@ -10,6 +10,13 @@ body {
     background: #1A2226;
     text-align: center;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    border-radius: 15px; 
+}
+
+.login-box input{
+	width: 90%;
+	margin-left: 20px;
+		
 }
 
 .login-key {
@@ -91,6 +98,7 @@ label {
     color: #6C6C6C;
     font-weight: bold;
     letter-spacing: 1px;
+    padding-bottom: 8px;
 }
 
 .btn-outline-primary {
@@ -113,6 +121,7 @@ label {
 
 .login-button {
     padding-right: 0px;
+    margin-left : 30px;
     text-align: right;
     margin-bottom: 25px;
 }
@@ -125,4 +134,8 @@ label {
 
 .loginbttm {
     padding: 0px;
+}
+
+.sBtn{
+	margin-left: 45px;
 }

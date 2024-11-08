@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+.mainC{
+	height: 700px;
+}
+
+.mainMsg{
+	margin-top: 50px;
+}

@@ -1,0 +1,11 @@
+package com.sh.spring.dao;
+
+import com.sh.spring.domain.UserVO;
+
+public interface UserDAO {
+
+	int register(UserVO uvo);
+
+	int registerAuthInit(String email);
+
+}

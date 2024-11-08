@@ -1,0 +1,24 @@
+package com.sh.spring.service;
+
+import org.springframework.stereotype.Service;
+
+import com.sh.spring.dao.UserDAO;
+import com.sh.spring.domain.UserVO;
+
+import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
+
+
+@Slf4j
+@RequiredArgsConstructor
+@Service
+public class UserServiceImpl implements UserService {
+	private UserDAO udao;
+
+	@Override
+	public int register(UserVO uvo) {
+		int isOk = udao.register(uvo);
+		
+		return udao.registerAuthInit(uvo); 
+	}
+}

@@ -1,0 +1,11 @@
+package com.sh.spring.security;
+
+import org.springframework.security.core.userdetails.User;
+
+import lombok.Getter;
+
+
+@Getter
+public class AuthUser extends User {
+
+}
