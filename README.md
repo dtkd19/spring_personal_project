@@ -189,5 +189,7 @@ Spring과 DB를 사용하여 MVC 패턴의 이해도를 높히고 데이터의 �
 
 
 
-## DB설계
+## 📑 DB설계
+
+<img src="https://github.com/user-attachments/assets/9d1e5a53-aa0f-4e81-b280-1f856f76bd52" alt="Image description">
 
