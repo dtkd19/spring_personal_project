@@ -21,4 +21,5 @@ public class BoardVO {
 	private int readCount;
 	private int cmtQty;
 	private int hasFile;
+	private int likeCount;
 }

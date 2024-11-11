@@ -1,0 +1,8 @@
+package com.sh.spring.dao;
+
+
+public interface likeDAO {
+
+	int getLike(long bno, String email);
+
+}

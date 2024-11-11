@@ -35,4 +35,5 @@ public interface BoardService {
 	List<BoardVO> sortRead(PagingVO pgvo);
 
 
+
 }

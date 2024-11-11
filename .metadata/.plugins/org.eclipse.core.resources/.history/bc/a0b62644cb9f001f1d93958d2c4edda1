@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+.conBox1{
+	background-color: #393939;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.comment{
+	background-color: #393939;
+	display: flex;
+	margin-bottom: 30px;
+	flex-direction: column;
+	padding: 20px;
+}
+
+.cbtn{
+	display : flex;
+	justify-content: end;
+	margin-top : 8px;
+	
+}
+
+.list-group{
+	background-color: #393939;
+}

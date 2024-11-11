@@ -1,9 +1,16 @@
 package com.sh.spring.dao;
 
-import com.sh.spring.domain.likeVO;
+import org.apache.ibatis.annotations.Param;
 
 public interface likeDAO {
 
-	likeVO getLike(long bno, String email);
+	int getLike(@Param("bno") long bno, @Param("email") String email);
+
+	int regList(@Param("bno") long bno, @Param("email") String email);
+
+	int delLike(@Param("bno") long bno, @Param("email") String email);
+
+	int likeCount();
+
 
 }

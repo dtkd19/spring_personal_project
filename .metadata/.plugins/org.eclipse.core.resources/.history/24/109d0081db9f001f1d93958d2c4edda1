@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+.fBtn{
+	margin-top: 10px;
+	margin-bottom: 20px;
+}	
+.fileZone{
+	border-radius: 15px;
+}

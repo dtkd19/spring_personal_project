@@ -2,6 +2,7 @@
     pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ taglib uri="http://www.springframework.org/security/tags" prefix="sec" %>
+<link href="../resources/css/userlist.css" rel="stylesheet"/>
 
 
 <jsp:include page="../layout/header.jsp" />
@@ -32,7 +33,7 @@
 		</c:forEach>
 		</div>
 	</form>
-	<br> <a href="/" class="btn btn-primary">돌아가기</a>
+	<br> <a href="/" class="btn btn-primary reBtn">돌아가기</a>
 	
 	</div>
 

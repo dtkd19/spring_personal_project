@@ -5,9 +5,20 @@
     
  <mapper namespace="com.sh.spring.dao.likeDAO"> 
  
- <select id="getLike">
- 	select * from likes where like_bno = #{bno}, like_email = #{email}
+ <select id="getLike" resultType="int">
+ 	select count(*) from likes where like_bno = #{bno} AND like_email = #{email}
  </select>
  
+ <insert id="regList">
+ 	insert into likes(like_bno, like_email) values(#{bno}, #{email})
+ </insert>
+ 
+ <delete id="delLike">
+	delete from likes where like_bno = #{bno} and like_email = #{email}
+</delete>
+ 
+ <update id="likeCount">
+ 	update board b set likeCount = (select Count(*) from likes l where l.like_bno = b.bno);
+ </update>
  
  </mapper>

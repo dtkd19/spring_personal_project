@@ -2,9 +2,10 @@
     pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ taglib uri="http://www.springframework.org/security/tags" prefix="sec" %>
+<link href="../resources/css/mypage.css" rel="stylesheet"/>
 
 <jsp:include page="../layout/header.jsp" />
-<div class="container-md">
+<div class="container-md Cmd">
 	<h2> 내정보 </h2>
 	<hr>
 	

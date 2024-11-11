@@ -72,6 +72,9 @@ like_bno int,
 lyn int not null default 0,
 primary key(lno));
 
+-- 24.11.11
+alter table board add likeCount int default 0;
+
 
 
 

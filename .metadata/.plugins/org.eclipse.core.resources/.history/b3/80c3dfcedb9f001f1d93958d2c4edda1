@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+.fBtn{
+	margin-top: 10px;
+	margin-bottom: 20px;
+}	
+.fileZone{
+	border-radius: 15px;
+}
+
+.cBox2{
+	background-color: #393939;
+	padding-left: 50px;
+	padding-right: 50px;
+	border-radius: 10px;
+}

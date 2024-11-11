@@ -1,14 +1,11 @@
 package com.sh.spring.controller;
 
-import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import com.sh.spring.domain.likeVO;
 import com.sh.spring.service.likeService;
 
 import lombok.RequiredArgsConstructor;
@@ -23,14 +20,13 @@ public class likeController {
 	private final likeService lsv;
 	
 	@GetMapping(value="/{bno}/{email}", produces = MediaType.APPLICATION_JSON_VALUE)
-	public ResponseEntity <likeVO> list(@PathVariable("bno") long bno, @PathVariable("email") String email ) {
+	public String isLike(@PathVariable("bno") long bno, @PathVariable("email") String email ) {
 		
-		likeVO lvo = lsv.getLike(bno,email);
+		log.info(">>>> bno, uno > {},{}", bno, email);
 		
-		log.info(">>>> lvo {} >> ", lvo);
+		int isOk= lsv.getLike(bno,email);
 		
-		return new ResponseEntity<likeVO>(lvo, HttpStatus.OK);
+		return isOk>0? "1" : "0";
 	}
-	
 	
 }

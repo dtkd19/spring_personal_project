@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+.conBox1{
+	background-color: #393939;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	
+	
+}

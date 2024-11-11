@@ -1,0 +1,79 @@
+-- 데이터베이스 생성
+create database springdb3;
+
+-- 권한부여 
+grant all privileges on springdb3.* to 'springUser'@'localhost' with grant option;
+
+-- 권한 설정 메모리 반영
+flush privileges;
+
+-- 24.11.06
+
+-- 보드 테이블 생성
+create table board(
+bno bigint auto_increment,
+title varchar(500) not null,
+writer varchar(500) not null,
+content text,
+is_del varchar(5) default 'N',
+reg_date datetime default now(),
+read_count int default 0,
+primary key(bno));
+
+-- 24.11.07
+
+-- 댓글 테이블
+create table comment(
+cno bigint auto_increment,
+bno bigint not null,
+writer varchar(500) not null,
+content text,
+reg_date datetime default now(),
+primary key(cno));
+
+-- 파일 테이블
+create table file(
+uuid varchar(256) not null,
+save_dir varchar(256) not null,
+file_name varchar(256) not null,
+file_type tinyint(1) default 0,
+bno bigint,
+file_size bigint,
+reg_date datetime default now(),
+primary key(uuid));
+
+-- 조회수, 첨부파일 수 추가
+alter table board add cmt_qty int default 0;
+alter table board add has_file int default 0;
+
+-- 24.11.08
+
+-- 유저 테이블
+create table user(
+email varchar(256),
+pwd varchar(256),
+nick_name varchar(256),
+reg_date datetime default now(),
+last_login datetime default now(),
+primary key(email));
+
+-- 권한 테이블 (auth)
+create table auth(
+id bigint auto_increment,
+email varchar(256) not null,
+auth varchar(256) not null,
+primary key(id))
+
+-- 추천 테이블
+create table likes(
+lno int auto_increment,
+like_email varchar(256),
+like_bno int,
+lyn int not null default 0,
+primary key(lno));
+
+
+
+
+
+

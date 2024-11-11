@@ -1,0 +1,9 @@
+package com.sh.spring.dao;
+
+import org.apache.ibatis.annotations.Param;
+
+public interface likeDAO {
+
+	int getLike(@Param("bno") bno, String email);
+
+}

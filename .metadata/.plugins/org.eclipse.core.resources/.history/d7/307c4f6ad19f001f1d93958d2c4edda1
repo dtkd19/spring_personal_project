@@ -1,0 +1,7 @@
+package com.sh.spring.service;
+
+public interface likeService {
+
+	int getLike(long bno, String email);
+
+}

@@ -4,6 +4,7 @@ import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
 
+import org.springframework.http.MediaType;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -22,6 +23,7 @@ import com.sh.spring.domain.PagingVO;
 import com.sh.spring.handler.FileHandler;
 import com.sh.spring.handler.PagingHandler;
 import com.sh.spring.service.BoardService;
+import com.sh.spring.service.likeService;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -34,6 +36,7 @@ import lombok.extern.slf4j.Slf4j;
 public class BoardController {
 	
 	private final BoardService bsv;
+	private final likeService lsv;
 	private final FileHandler fh;
 	
 	@GetMapping("/register")
@@ -142,5 +145,42 @@ public class BoardController {
 		
 		return isOk > 0 ? "1" : "0";
 	}
+	
+		
+	@ResponseBody
+	@GetMapping(value="/like/{bno}/{email}")
+	public String isLike(@PathVariable("bno") long bno, @PathVariable("email") String email ) {
+			
+		log.info(">>>> bno, uno > {},{}", bno, email);
+			
+		int isOk= lsv.getLike(bno,email);
+			
+		return isOk>0? "1" : "0";
+		
+	}
+	
+	@ResponseBody
+	@GetMapping(value="/regLike/{bno}/{email}")
+	public String regLike(@PathVariable("bno") long bno, @PathVariable("email") String email) {
+		int isOk = lsv.regLike(bno, email);
+		
+		int isUpdate = lsv.likeCount();
+		
+		return isOk>0? "1" : "0";
+	}
+	
+	
+	@ResponseBody
+	@GetMapping(value="/delLike/{bno}/{email}")
+	public String delLike(@PathVariable("bno") long bno, @PathVariable("email") String email) {
+		int isOk = lsv.delLike(bno, email);
+		
+		int isUpdate = lsv.likeCount();
+		
+		return isOk>0? "1" : "0";
+	}
+	
+	
+		
 	
 }

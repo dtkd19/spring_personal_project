@@ -3,7 +3,6 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <link href="../resources/css/login.css" rel="stylesheet"/>
 <jsp:include page="../layout/header.jsp" />
-<link href="../resources/css/register.css" rel="stylesheet"/>
 
 <div class="container-md">
 

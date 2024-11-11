@@ -4,7 +4,7 @@
 
 <jsp:include page="../layout/header.jsp" />
 <link href="../resources/css/list.css" rel="stylesheet"/>
-	<div class="container-md">
+	<div class="container-md cBox2" >
 	<h3>자유게시판</h3>	
 	<!-- serach -->
 	<div class ="container-fluid" >

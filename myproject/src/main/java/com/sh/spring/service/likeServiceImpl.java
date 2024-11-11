@@ -16,9 +16,28 @@ public class likeServiceImpl implements likeService{
 	private final likeDAO ldao;
 
 	@Override
-	public likeVO getLike(long bno, String email) {
+	public int getLike(long bno, String email) {
 		// TODO Auto-generated method stub
 		return ldao.getLike(bno,email);
 	}
+
+	@Override
+	public int regLike(long bno, String email) {
+		// TODO Auto-generated method stub
+		return ldao.regList(bno,email);
+	}
+
+	@Override
+	public int delLike(long bno, String email) {
+		// TODO Auto-generated method stub
+		return ldao.delLike(bno,email);
+	}
+
+	@Override
+	public int likeCount() {
+		// TODO Auto-generated method stub
+		return ldao.likeCount();
+	}
+
 	
 }

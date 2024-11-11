@@ -1,9 +1,14 @@
 package com.sh.spring.service;
 
-import com.sh.spring.domain.likeVO;
-
 public interface likeService {
 
-	likeVO getLike(long bno, String email);
+	int getLike(long bno, String email);
+
+	int regLike(long bno, String email);
+
+	int delLike(long bno, String email);
+
+	int likeCount();
+
 
 }

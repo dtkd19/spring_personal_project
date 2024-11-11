@@ -1,0 +1,6 @@
+@charset "UTF-8";
+
+.fBtn{
+	margin-top: 10px;
+	margin-bottom: 30px;
+}	

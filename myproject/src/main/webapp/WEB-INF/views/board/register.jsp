@@ -2,11 +2,12 @@
 	pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ taglib uri="http://www.springframework.org/security/tags"  prefix="sec"%>
+<link href="../resources/css/register.css" rel="stylesheet"/>
 
 <jsp:include page="../layout/header.jsp" />
 
 <sec:authentication property="principal.uvo.nickName" var="authNick"/>  
-<div class="container-md">
+<div class="container-md cBox2">
 	<h2 style="margin-bottom: 15px">글쓰기</h2>
 	<form action="/board/register" method="post" enctype="multipart/form-data">
 		<div class="row g-2">
