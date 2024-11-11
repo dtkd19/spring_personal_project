@@ -49,6 +49,14 @@ Spring과 DB를 사용하여 MVC 패턴의 이해도를 높히고 데이터의 �
 </details>
 
 <details>
+● 댓글과 조회수 높은순으로 10개의 게시글을 정렬해서 표시할 수 있는 버튼을 구현하였습니다.
+<summary>댓글 / 조회순 TOP10 표시</summary>
+<img src="https://github.com/user-attachments/assets/a8416a56-4cc5-4b4c-9723-f2fe277231f7" alt="image">
+<img src="https://github.com/user-attachments/assets/e7b6ef00-03b2-4c77-979c-395432e8a75b" alt="image">
+
+</details>
+
+<details>
 <summary>게시글 작성</summary>
 
 ● 로그인한 회원만이 작성이 가능하며 로그인을 하지않을 시 로그인창으로 이동합니다.
