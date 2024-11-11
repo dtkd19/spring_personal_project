@@ -11,7 +11,10 @@ Spring과 DB를 사용하여 MVC 패턴의 이해도를 높히고 데이터의 �
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 ![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white)
- 
+
+
+## 🕰 개발기간
+- 24.11.06(수) ~ 24.11.11(월)
 ## 🛠 프로젝트 기능 설명
 
 ### 게시판기능
@@ -192,4 +195,20 @@ Spring과 DB를 사용하여 MVC 패턴의 이해도를 높히고 데이터의 �
 ## 📑 DB설계
 
 <img src="https://github.com/user-attachments/assets/9d1e5a53-aa0f-4e81-b280-1f856f76bd52" alt="Image description">
+
+## 프로젝트를 마치며
+
+- 이번 프로젝트를 통해 Spring Framework와 데이터베이스 연동에 대한 깊은 이해를 얻을 수 있었습니다.
+
+- session이나 댓글에서 사용한 ajax 비동기 방식의 통신 등 HTTP 통신에 대한 이해도 높아졌습니다.
+
+- Spring의 다양한 기능을 활용하여 게시판을 구축하는 과정에서 MVC 패턴의 전체적인 흐름을 익힐 수 있었고, 실무에서의 적용 가능성도 느낄 수 있었습니다. 
+
+- Spring과 DB의 유기적인 연동을 통해 효율적인 웹 애플리케이션을 구현할 수 있다는 자신감을 얻었으며, 앞으로도 더 복잡한 시스템을 다룰 때 이 경험을 바탕으로 더 나은 개발을 할 수 있을 것입니다.
+
+- 다만 본인이 작성한 코드임에도 완벽하게 타인에게 설명할 수 있을지는 아직 어려움을 느끼기에 부족한 부분을 더 공부해 남에게 설명할 수 있을 수준으로 이해도를 올려야겠다고 생각했습니다.
+
+- 따라서 앞으로 다른 프로젝트나, 개인공부를 통해 백엔드 실력을 향상시키도록 노력하겠습니다. 
+
+    <strong> 읽어주셔서 감사합니다. </strong>
 
