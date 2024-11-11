@@ -89,7 +89,8 @@ document.addEventListener('click', (e) => {
 
 
         let cmtWriter = li.querySelector('.fw-bold').innerText;
-        document.getElementById('cmtWriterMod').innerHTML = `<b> ${cmtWriter} </b> `;
+        console.log(cmtWriter);
+        document.getElementById('cmtWriterMod').innerHTML = `<b style="color: black"> ${cmtWriter} </b> `;
 
         // cmtModBtn => cno 값을 dataset으로 달기
         document.getElementById('cmtModBtn').setAttribute("data-cno", cno);

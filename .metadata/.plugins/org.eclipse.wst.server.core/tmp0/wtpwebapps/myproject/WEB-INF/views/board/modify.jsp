@@ -2,10 +2,12 @@
 	pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 
+<link href="../resources/css/register.css" rel="stylesheet"/>
+
 <jsp:include page="../layout/header.jsp" />
 
-<div class="container-md">
-	<h3>작성한 글 수정</h3>
+<div class="container-md cBox2">
+	<h3 style="margin-bottom: 10px">작성한 글 수정</h3>
 	<c:set value="${bdto.bvo }" var="bvo"></c:set>
 	<form action="/board/modify" method="post" enctype="multipart/form-data">
 	<input type="hidden" name="bno" value="${bvo.bno }">
@@ -22,7 +24,9 @@
 		<div class="mb-3">
 			<label for="file" class="form-label"></label> 
 			<input type="file" class="form-control" id="file" name="files" multiple="multiple" style="display:none">
-			<button type="button" class="btn btn-outline-secondary" id="trigger">첨부파일 수정</button>
+			<div class="fBtn">
+			<button type="button" class="btn btn-outline-info" id="trigger">첨부파일 수정</button>
+			</div>
 			<span id="fileZone"></span>
 		</div>
 		<div class="mb-3">
