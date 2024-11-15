@@ -153,6 +153,7 @@ Spring과 DB를 사용하여 MVC 패턴의 이해도를 높히고 데이터의 �
 <details>
 <summary>댓글 작성</summary>
 ● 유저의 별명과 함께 댓글창이 나와있으며 내용을입력하고 등록하면 댓글이 등록되도록 구현하였습니다.
+● 댓글 삭제/수정 버튼은 어드민권한을 가진 유저를 제외하면 본인댓글은 본인만 볼 수 있도록 구현하였습니다.
 <img src="https://github.com/user-attachments/assets/b2bea2f5-29e5-4021-869f-5b6050005aba" alt="Image description">
 <img src="https://github.com/user-attachments/assets/015bc21b-7f76-441d-a3d4-aaedcbb7da9f" alt="Image description">
 
